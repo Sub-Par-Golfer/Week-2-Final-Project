@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project (Week 2)</title>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    </style>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -12,30 +15,38 @@
     <script src="index.js"></script>
   </head>
   <body>
-    <main>
-      <section class="nav">
-        <div id="root">
-          <div class="container">
-            <div class="row">
-                <div>
-                    <button>
-                        <img src="./assets/treact logo.svg" alt=""> <span class="logo-bold">Treact</span>
-                    </button>
+    <section class="nav__landing">
+      <nav>
+        <div class="container">
+          <div class="row">
+              <a href=""class="logo">
+                  <img src="./assets/treact logo.svg" class="nav__landing--img" alt=""/><span class="text__purple">Treact</span></a
+                  >
                 </div>
-                <div class="nav__links">
-                    <ul>
-                       <li><a href="#" class="nav__link">About</a></li>
-                       <li><a href="#" class="nav__link">Blog</a></li>
-                       <li><a href="#" class="nav__link">Pricing</a></li>
-                       <li><a href="#" class="nav__link">Contact Us</a></li>
-                       <li><a href="#" class="nav__link">Login</a></li>
-                       <li><a href="#" class="nav__link--primary">Sign Up</a></li>
-                    </ul>
-                </div>
-            </div>
-          </div>
+            <ul class="nav__links">
+                <a href="#"><li class="nav__link">About</li></a>
+                <a href="#"><li class="nav__link">Blog</li></a>
+                <a href="#"><li class="nav__link">Pricing</li></a>
+                <a href="#"><li class="nav__link">Contact Us</li></a>
+                <a href="#"><li class="nav__link nav__link--styled">Login</li></a>
+                <a href="#"><li class="nav__link nav__link--primary">
+                    <link rel="stylesheet" href="#">Sign Up
+                </li></a>
+            </ul>
         </div>
-      </section>
-    </main>
+      </nav>
+    </section>
+    <section>
+        <header class="landing">
+            <h1 class="landing__title">
+                <p class="landing__title--para">
+                    <input type="email"> <button class="text__purple">Get Started</button>
+                </p>
+            </h1>
+        </header>
+        <figure class="landing__title--img">
+            <img src="./assets/landing img.svg" alt="">
+        </figure>
+    </section>
   </body>
 </html>
