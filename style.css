@@ -26,10 +26,10 @@ a:hover {
     color: #6415ff
 }
 
+
 p {
     display: flex;
     width: 100%;
-
 }
 
 button {
@@ -40,6 +40,7 @@ button {
     position: relative;
     font-size: 14px;
     background-color: #6415ff;
+    border: hidden;
     border-radius: 40px;
     font-weight: 700;
     margin: 8px 8px 8px 0px;
@@ -372,9 +373,61 @@ input {
     line-height: 2;
 }
 
-/* container padding 80px 0
-row 
-calc 100/3 flex wrap */
+/* Quality */
+#quality {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.quality__container {
+    display: flex;
+    width: calc(100% / 2);
+    max-width: 1300px;
+}
+
+.quality__row {
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality__heading {
+    display: flex;
+    width: 100%;
+    color: #6415ff;
+    font-weight: 800;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    font-size: 16px;
+}
+
+
+.quality__text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    width: 50%;
+}
+
+.quality__img {
+    display: flex;
+    position: relative;
+    width: 50%;
+}
+
+
 /* professionals
 container
 row
