@@ -421,6 +421,11 @@ input {
     width: 50%;
 }
 
+.quality__text--main {
+    font-size: 48px;
+    margin: 16px 0;
+}
+
 .quality__img {
     display: flex;
     position: relative;
