@@ -28,7 +28,7 @@
                         src="./assets/treact logo.svg"
                         class="nav__landing--img"
                         alt=""
-                      ><span class="text__purple">Treact</span></a
+                      /><span class="text__purple">Treact</span></a
                     >
                   </div>
                   <ul class="nav__links">
@@ -50,7 +50,7 @@
             </section>
           </div>
         </header>
-        <section class="landing">
+        <section id="landing">
           <div class="landing__column1">
             <h1 class="landing__title">
               Beautiful React Templates
@@ -70,7 +70,7 @@
                 src="./assets/customer_logo_strip.png"
                 class="customer__logo--img"
                 alt=""
-              >
+              />
             </div>
           </div>
           <div class="landing__column2">
@@ -79,7 +79,7 @@
                 src="./assets/landing img.svg"
                 class="landing__title--img"
                 alt=""
-              >
+              />
             </figure>
           </div>
         </section>
@@ -90,7 +90,7 @@
                 <span class="text__purple--features">FEATURES</span>
               </div>
               <h1 class="features__heading">
-                We have Amazing <span class="text__blue">Service.</span>
+                We have Amazing <span class="hidden">.</span><span class="text__blue">Service.</span>
               </h1>
               <p class="features__para">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -104,7 +104,7 @@
                       src="./assets/shield.svg"
                       alt=""
                       class="features__bullet--img"
-                    >
+                    />
                   </span>
                   <span class="features__text--container">
                     <div class="features__bullet--title">Secure</div>
@@ -120,7 +120,7 @@
                       src="./assets/headphones.svg"
                       alt=""
                       class="features__bullet--img"
-                    >
+                    />
                   </span>
                   <span class="features__text--container">
                     <div class="features__bullet--title">24/7 Support</div>
@@ -136,7 +136,7 @@
                       src="./assets/sliders.svg"
                       alt=""
                       class="features__bullet--img"
-                    >
+                    />
                   </span>
                   <span class="features__text--container">
                     <div class="features__bullet--title">Customizable</div>
@@ -152,7 +152,7 @@
                       src="./assets/arrows.svg"
                       alt=""
                       class="features__bullet--img"
-                    >
+                    />
                   </span>
                   <span class="features__text--container">
                     <div class="features__bullet--title">Reliable</div>
@@ -168,7 +168,7 @@
                       src="./assets/fast.svg"
                       alt=""
                       class="features__bullet--img"
-                    >
+                    />
                   </span>
                   <span class="features__text--container">
                     <div class="features__bullet--title">Fast</div>
@@ -184,7 +184,7 @@
                       src="./assets/person.svg"
                       alt=""
                       class="features__bullet--img"
-                    >
+                    />
                   </span>
                   <span class="features__text--container">
                     <div class="features__bullet--title">Easy</div>
@@ -199,23 +199,82 @@
           </div>
         </section>
         <section id="quality">
-            <div class="quality__container">
-                <div class="quality__row">
-                    <div class="quality__text">
-                        <h1 class="quality__heading">
-                            <span class="text__blue">Quality Works</span>
-                        </h1>
-                        <h2 class="quality__text--main">
-                            Designed & Developed by <span class="text__blue">Professionals</span>
-                        </h2>
-                        <p class="quality__text--para">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
+          <div class="quality__container">
+            <div class="quality__row">
+              <div class="quality__text">
+                <h1 class="quality__heading">
+                  <span class="text__blue">QUALITY WORK</span>
+                </h1>
+                <h2 class="quality__text--main">
+                  Designed & Developed by
+                  <span class="text__blue">Professionals.</span>
+                </h2>
+                <p class="quality__text--para">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <a href="http://timerse.com" class="quality__btn">Learn More</a>
+              </div>
+              <div class="quality__img--container">
+                <div class="quality__img">
+                  <img src="./assets/qualitypage.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="steps">
+             <div class="steps__container">
+                    <figure class="steps__img--container">
+                        <img src="./assets/stepsimg.png" class="steps__img" alt="">
+                    </figure>
+                    <div class="steps__text--container">
+                        <div class="steps__text--title">
+                            STEPS
+                        </div>
+                        <div class="steps__text--heading">
+                            Easy to <span class="text__blue">Get Started.</span>
+                        </div>
+                        <ul class="steps__text--list">
+                            <li class="steps__text--step">
+                                <div class="steps__text--number">01</div>
+                                <div class="steps__text--description">
+                                    <h6 class="steps__text--main">Register</h6>
+                                    <p class="steps__text--para">Create an account with us using Google or Facebook.</p>
+                                </div>
+                            </li>
+                            <li class="steps__text--step">
+                                <div class="steps__text--number">02</div>
+                                <div class="steps__text--description">
+                                    <h6 class="steps__text--main">Download</h6>
+                                    <p class="steps__text--para">Browse and Download the template that you like from the marketplace.</p>
+                                </div>
+                            </li>
+                            <li class="steps__text--step">
+                                <div class="steps__text--number">03</div>
+                                <div class="steps__text--description">
+                                    <h6 class="steps__text--main">Run</h6>
+                                    <p class="steps__text--para">Follow the instructions to setup and customize the template to your needs.</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div>
-                        <figure class="quality__img">
-                            <img src="./assets/qualitypage.png" alt="">
-                        </figure>
+                </div>
+        </section>
+        <section id="values">
+            <div class="values__container">
+                <div class="values__text">
+                    <div class="values__text--title">VALUES</div>
+                    <div class="values__text--heading">We Always Abide by Our <span class="text__blue">Principles.</span></div>
+                    <p class="values__text--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="values__text--bullets-container">
+                        <div class="values__text--bullet1">
+                            <div class="values__text--bullet-img-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            </div>
+                            <div class="values__text--bullet-heading">Affordable</div>
+                        </div>
                     </div>
                 </div>
             </div>
