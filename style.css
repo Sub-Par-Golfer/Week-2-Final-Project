@@ -1326,3 +1326,8 @@ img {
 git commands
 git init
 copy remote add on github repo
+git status 
+git add . 
+git commit -m "whatever update you want to call"
+git push
+repeat last three when updating
