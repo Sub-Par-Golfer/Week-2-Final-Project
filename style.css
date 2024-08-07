@@ -9,6 +9,7 @@
 }
 html {
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,14 +24,15 @@ body {
     justify-content:center;
     align-items: center;
     height: 100%;
-    width: 100vw;
-    
+    width: 100%;
+    padding: 32px;
 }
 
 section {
     display: flex;
     width: 100%;
     padding: 96px 0px;
+    margin: 0 auto;
 }
 
 a {
@@ -58,6 +60,7 @@ p {
 }
 
 .heading {
+    width: 100%;
     font-size: 48px;
     font-weight: 900;
     margin: 16px 0px 0px;
@@ -111,7 +114,7 @@ button:hover {
 
 .container {
     display: flex;
-    width: 100%;
+    width: 100vw;
     max-width: 1300px;
     align-items: center;
     justify-content: center;
@@ -194,6 +197,7 @@ nav {
     margin: 0 16px;
 }
 
+
 .nav__link {
     display: flex;
     font-size: 14px;
@@ -241,6 +245,67 @@ nav {
     color: #6415ff;
     transition: all 300ms ease;
     text-decoration: hidden;
+}
+
+
+
+.btn__menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: blue;
+    display: none;
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: #242424;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu__list {
+    padding: 32px 0;
+}
+
+.menu__links {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__link {
+    font-size: 40px;
+    color: white;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
 }
 
 /* Title Page */
@@ -1421,7 +1486,61 @@ img {
     transition: all 300ms ease;
 }
 
+/* Small Phones, Tablets, Large Smartphones */
+@media (max-width: 768px) {
+    .nav__links{
+        display: flex;
+    }
 
+    .menu {
+        display: flex;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    .about-me__info--para {
+      font-size: 18px;
+    }
+    .language {
+      width: calc(100% / 2);
+    }
+    .project__description--para {
+      font-size: 14px;
+    }
+    .project__description {
+      left: 30px;
+      padding-right: 30px;
+    }
+  }
+  
+  /* Small phones */
+  @media (max-width: 480px) {
+    .project__description {
+      padding: 0;
+      left: 0;
+      width: 100%;
+    }
+    .nav__link:not(:last-child) {
+      display: none;
+    }
+    .project__description--para {
+      display: none;
+    }
+    .project__description--links {
+      display: flex;
+      justify-content: center;
+    }
+    .project__description--sub-title {
+      text-align: center;
+      margin: 12px 0;
+    }
+    .project__description--title {
+      font-size: 32px;
+      line-height: 1;
+      text-align: center;
+    }
+  }
+  
 
 
 
