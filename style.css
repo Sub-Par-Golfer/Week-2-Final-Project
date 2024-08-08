@@ -36,7 +36,7 @@ section {
 }
 
 a {
-    color: #243e63;
+    color: #F7FAFC;
     text-decoration: none;
 }
 
@@ -82,19 +82,6 @@ p {
 
 button {
     display: flex;
-    color: #f7fafc;
-    width: 50%;
-    height: 100%;
-    position: relative;
-    font-size: 14px;
-    background-color: #6415ff;
-    border: hidden;
-    border-radius: 40px;
-    font-weight: 700;
-    margin: 8px 8px 8px 0px;
-    padding: 16px 0;
-    justify-content: center;
-    align-items: center;
 }
 
 button:hover {
@@ -115,7 +102,7 @@ button:hover {
 .container {
     display: flex;
     width: 100vw;
-    max-width: 1300px;
+    max-width: 1200px;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -130,10 +117,10 @@ ul {
 }
 
 li {
-    display: flex;
+    display: block;
     text-decoration: none;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 header {
@@ -183,6 +170,11 @@ nav {
     margin: 0 20px 0 0;
 }
 
+.nav__links--logo-container {
+    display: flex;
+    justify-content: start;
+}
+
 .logo {
     display: flex;
     width: 100%;
@@ -200,12 +192,16 @@ nav {
 
 .nav__link {
     display: flex;
+    color: #243e63;
     font-size: 14px;
     font-weight: 700;
     text-align: center;
     align-items: center;
     margin: 0 24px;
     padding: 0 0 4px;
+    text-decoration: none;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .nav__link--primary {
@@ -247,9 +243,7 @@ nav {
     text-decoration: hidden;
 }
 
-
-
-.btn__menu {
+.btn__menu--bars {
     background-color: transparent;
     font-size: 40px;
     text-align: center;
@@ -260,7 +254,9 @@ nav {
 
 .menu__backdrop {
     position: absolute;
-    background-color: #242424;
+    background-color: #ffffff;
+    height: 100%;
+    max-height: 50%;
     top: 0;
     left: 0;
     right: 0;
@@ -285,19 +281,18 @@ nav {
 }
 
 .menu__list {
-    padding: 32px 0;
+    padding: 10px 0;
 }
 
 .menu__links {
     display: flex;
-    color: white;
     flex-direction: column;
     align-items: center;
 }
 
 .menu__link {
     font-size: 40px;
-    color: white;
+    color: #243e63;
 }
 
 .btn__menu--close {
@@ -369,6 +364,7 @@ nav {
     vertical-align: middle;
     width: 100%;
     padding: 0 0 96px 46px;
+    
 }
 
 input {
@@ -392,10 +388,24 @@ input {
     padding: 0px 0px 0px 20px;
 }
 
+.landing__get-started--btn {
+    color: #f7fafc;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    font-size: 14px;
+    background-color: #6415ff;
+    border: hidden;
+    border-radius: 40px;
+    font-weight: 700;
+    margin: 8px 8px 8px 0px;
+    padding: 16px 0;
+    justify-content: center;
+    align-items: center;
+}
 .img__container {
     width: 100%;
     margin: 0 auto;
-
 }
 
 .landing__customer--logo-strip {
@@ -1486,62 +1496,171 @@ img {
     transition: all 300ms ease;
 }
 
+
+
 /* Small Phones, Tablets, Large Smartphones */
-@media (max-width: 768px) {
-    .nav__links{
-        display: flex;
-    }
+    @media (max-width: 768px) {
+        .container {
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-    .menu {
-        display: flex;
-    }
-    h1 {
-      font-size: 28px;
-    }
-    .about-me__info--para {
-      font-size: 18px;
-    }
-    .language {
-      width: calc(100% / 2);
-    }
-    .project__description--para {
-      font-size: 14px;
-    }
-    .project__description {
-      left: 30px;
-      padding-right: 30px;
-    }
-  }
-  
-  /* Small phones */
-  @media (max-width: 480px) {
-    .project__description {
-      padding: 0;
-      left: 0;
-      width: 100%;
-    }
-    .nav__link:not(:last-child) {
-      display: none;
-    }
-    .project__description--para {
-      display: none;
-    }
-    .project__description--links {
-      display: flex;
-      justify-content: center;
-    }
-    .project__description--sub-title {
-      text-align: center;
-      margin: 12px 0;
-    }
-    .project__description--title {
-      font-size: 32px;
-      line-height: 1;
-      text-align: center;
-    }
-  }
-  
+        .nav__links {
+            display: none;
+        }
+        .btn__menu--bars {
+            display: flex;
+            justify-content: end;
+            margin: 0 24px;
+            font-size: 24px;
+            background-color: #ffffff;
+            color: #243e63;
+            border: none;
+        }
+        .btn__menu--bars:hover {
+            text-decoration: none;
+            color: #6415ff;
+            background-color: #ffffff;
+        }
+        .logo {
+            padding-left: 36px;
+        }
 
+        .menu__list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .menu__link--btn {
+            display: flex;
+            color: #f7fafc;
+            font-size: 24px;
+            font-weight: 700;
+            background-color: #6415ff;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 40px;
+            border: hidden;
+            margin: 0 16px;
+            padding: 12px 32px;
+        }
+
+        #landing {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .landing__column1 {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .landing__column2 {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .landing__get-started--btn {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            translate: -6px 64px;
+        }
+
+        .landing__input {
+            height: 56px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        input {
+            translate: 0 32px;
+        }
+
+        .landing__input--btn {
+            display: flex;
+            width: 100;
+        }
+
+        .landing__container {
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img__container{
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .landing__title--img {
+            display: flex;
+            width: 100vw;
+            position: relative;
+            max-width: 512px;
+            justify-content: center;
+            align-items: center;
+            padding: 48px 0;
+        }
+        .customer__logo--img {
+             padding: 0;
+         }
+        
+
+        .features__container {
+            width: 100vw;
+
+        }
+
+        .features__bullet--container {
+            width: calc(100% / 2);
+        }
+
+        .features__bullet--row {
+            width: 100vw;
+            flex-wrap: wrap;
+        }
+
+        .features__text--container {
+            width: 100%;
+        }
+
+        .features__heading {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        
+        .features__row {
+            display: flex;
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+
+
+
+
+}
 
 
 git commands

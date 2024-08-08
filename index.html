@@ -8,10 +8,8 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
     </style>
-    <script
-      src="https://kit.fontawesome.com/c8e4d183c2.js"
-      crossorigin="anonymous"
-    ></script>
+      <link rel="stylesheet" href="./style.css" />
+      <script src="https://kit.fontawesome.com/0579d1412b.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </head>
   <body>
@@ -22,7 +20,7 @@
               <div class="container">
                 <div class="nav__row">
                   <nav>
-                    <div class="three__column--logo-container">
+                    <div class="nav__links--logo-container">
                       <a href="#" class="logo">
                         <img
                         src="./assets/treact logo.svg"
@@ -31,43 +29,51 @@
                         /><span class="text__purple treact__name--landing">Treact</span></a
                         >
                       </div>
-                        
                     </div>
                     <ul class="nav__links">
-                      <li class="nav__link"><a href="#">About</a></li>
-                      <li class="nav__link"><a href="#">Blog</a></li>
-                      <li class="nav__link"><a href="#">Pricing</a></li>
-                      <li class="nav__link"><a href="#">Contact Us</a></li>
+                      <li><a  class="nav__link" href="#">About</a></li>
+                      <li><a  class="nav__link" href="#">Blog</a></li>
+                      <li><a  class="nav__link" href="#">Pricing</a></li>
+                      <li><a  class="nav__link" href="#">Contact Us</a></li>
                       <a href="#"
                       ><li class="nav__link nav__link--styled">Login</li></a
                     >
                     <a href="#">
                       <li class="nav__link--primary">
-                        <link rel="stylesheet" href="#" />Sign Up
+                        <link rel="stylesheet" href="#"/>Sign Up
                       </li>
                       </a>
-                  </ul>
-                  <button class="btn__menu" onclick="openMenu()">
-                    <i class="fas fa-bars"></i>
-                  </button>
-                  <div class="menu__backdrop">
-                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                      <i class="fas fa-times"></i>
-                    </button>
-                    <ul class="menu__links">
-                      <li class="menu__list">
-                        <a href="#landing" class="menu__link button" onclick="closeMenu()">Home</a>
-                      </li>
-                      <li class="menu__list">
-                        <a href="#featured" class="menu__link" onclick="closeMenu()">Books</a>
-                      </li>
-                      <li class="menu__list">
-                        <a href="mailto:joshjthompson@yahoo.com" onclick="closeMenu()">Contact</a>
-                      </li>
                     </ul>
+                    <button class="btn__menu--bars" onclick="openMenu()">
+                      <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                      <button class="btn__menu--bars btn__menu--close" onclick="closeMenu()">
+                        <i class="fa-solid fa-x"></i>
+                      </button>
+                      <ul class="menu__links">
+                        <li class="menu__list">
+                          <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+                        </li>
+                        <li class="menu__list">
+                          <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+                        </li>
+                        <li class="menu__list">
+                          <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a>
+                        </li>
+                        <li class="menu__list">
+                          <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                        </li>
+                        <li class="menu__list">
+                          <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+                        </li>
+                        <li class="menu__list">
+                          <button  class="menu__link--btn" onclick="closeMenu()"><a href="#">Sign Up</a></button>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </nav>
+                </nav>
             </section>
           </div>
         </header>
@@ -83,10 +89,10 @@
             </p>
             <div class="landing__input">
               <input type="email" placeholder="Your E-mail Address" />
-              <button>Get Started</button>
+              <button class="landing__get-started--btn">Get Started</button>
             </div>
             <div class="landing__customer--logo-strip">
-              <p>OUR TRUSTED CUSTOMERS</p>
+              <h2>OUR TRUSTED CUSTOMERS</h2>
               <img
                 src="./assets/customer_logo_strip.png"
                 class="customer__logo--img"
